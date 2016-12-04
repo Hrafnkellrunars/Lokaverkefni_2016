@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteRule ^(\w+)$ index.php?page=$1 [L,NC,QSA]
+RewriteRule ^(\w+)+\/$ index.php?page=$1 [L,NC,QSA]
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTPS}s ^on(s)|
+
+Options -Indexes
+
+php_value short_open_tag 1
+
+#RewriteBase /
+#RewriteCond %{REMOTE_ADDR} !^46\.22\.110\.250
+#RewriteCond %{REMOTE_ADDR} !^46\.239\.217\.130
+#RewriteCond %{REMOTE_ADDR} !^46\.22\.98\.36
+#RewriteCond %{REMOTE_ADDR} !^213\.213\.153\.35
+#RewriteCond %{REQUEST_URI} !/countdown/countdown\.html$ [NC]
+#RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|ico|js)$ [NC]
+#RewriteRule ^(.*)$ /countdown/countdown.html [R=302,L] 
