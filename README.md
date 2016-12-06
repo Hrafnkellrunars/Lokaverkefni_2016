@@ -1,2 +1,4 @@
 Lokaverkefni 2016
-Hrafnkell Rúnarsson
+Hrafnkell RÃºnarsson
+
+http://csgocrown.gg/roulette
